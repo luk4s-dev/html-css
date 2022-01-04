@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="/image/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/image/img-m.png" type="image/png">
+        <img src="/image/img-g.png" alt="A Imagem flexível funciona">
+        <!-- O Source tem que ser em ordem crescente, o primeiro sempre será o menor e o último sempre o maior -->
+    </picture>
+    <h1>Audio</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="guanacast-33.mp3" type="audio/mpeg">
+        <source src="/audios/guanacast-33.ogg" type="audio/ogg">
+        <source src="/audios/guanacast-33.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio <a href="audios/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <h1>Vídeos</h1>
+    <video width="600" poster="image/limoes-capa.png" controls autoplay>
+    <source src="video/meu-video.webm" type="video/webm">
+    <source src="video/meu-video.mp4" type="video/mp4">
+    <source src="video/meu-video.ogv" type="video/ogg">
+    <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+
+</body>
+</html>
