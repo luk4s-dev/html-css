@@ -14,21 +14,36 @@
         caption {
             font-family: Arial, Helvetica, sans-serif;
             padding: 10px;
+            font-weight: bold;
         }
         
         table {
             width: 400px;
             border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
         }
 
         tr, th, td {
             border: 1px solid black;
         }
 
-        th {
+        thead th {
             background-color: gray;
             color: white;
         }
+
+        td {
+            padding: 5px;
+        }
+
+        .media {
+            background-color: gray;
+            color: white;
+            text-align: left;
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -56,7 +71,43 @@
                 <td>0,0</td>
             </tr>
             <tr>
-
+                <td>Física</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media">Média de Exatas</th>
+                <td class="media">0,0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media">Média de Humanas</th>
+                <td class="media">0,0</td>
             </tr>
         </tbody>
     </table>
